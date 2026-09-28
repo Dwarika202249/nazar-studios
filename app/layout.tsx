@@ -51,12 +51,18 @@ export default function RootLayout({
         className="bg-ink text-ivory antialiased selection:bg-champagne selection:text-ink min-h-screen relative flex flex-col justify-between overflow-x-hidden"
         suppressHydrationWarning
       >
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 focus:z-[200] focus:px-4 focus:py-2 focus:bg-champagne focus:text-ink focus:font-mono focus:text-xs focus:rounded-full"
+        >
+          Skip to main content
+        </a>
         <SmoothScroll>
           <Preloader />
           <Cursor />
           <GrainOverlay />
           <Nav />
-          <div className="flex-1 flex flex-col">{children}</div>
+          <div id="main-content" className="flex-1 flex flex-col">{children}</div>
           <Footer />
         </SmoothScroll>
       </body>
