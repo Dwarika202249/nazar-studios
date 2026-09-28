@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #0B0908;
+  --velvet: #2A0C14;
+  --forest: #16211B;
+  --ivory: #F3ECE0;
+  --sand: #D9CDB8;
+  --champagne: #C9A46A;
+  --gold-hi: #E8CB93;
+  --sindoor: #B3261E;
+  --smoke: rgba(243, 236, 224, 0.12);
+  --ink-70: rgba(11, 9, 8, 0.7);
+
+  --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+  --font-manrope: 'Manrope', system-ui, sans-serif;
+  --font-mono: 'DM Mono', monospace;
+  --font-devanagari: 'Tiro Devanagari Hindi', serif;
+}
+
+html {
+  background-color: var(--ink);
+  color: var(--ivory);
+  font-family: var(--font-manrope);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Gold line hairline gradient */
+.gold-hairline-gradient {
+  background: linear-gradient(90deg, #C9A46A, #E8CB93, #C9A46A);
+}
+
+/* Subtle Film Grain animation */
+@keyframes grain-animation {
+  0%, 100% { transform: translate(0, 0); }
+  10% { transform: translate(-5%, -10%); }
+  20% { transform: translate(-15%, 5%); }
+  30% { transform: translate(7%, -25%); }
+  40% { transform: translate(-5%, 25%); }
+  50% { transform: translate(-15%, 10%); }
+  60% { transform: translate(15%, 0%); }
+  70% { transform: translate(0%, 15%); }
+  80% { transform: translate(3%, 35%); }
+  90% { transform: translate(-10%, 10%); }
+}
+
+.film-grain {
+  animation: grain-animation 1.4s steps(8) infinite;
+}
+
+/* Selection highlight */
+::selection {
+  background-color: var(--champagne);
+  color: var(--ink);
+}
+
+/* Smooth theme background shifts */
+[data-theme="ink"] {
+  background-color: var(--ink);
+  color: var(--ivory);
+}
+
+[data-theme="velvet"] {
+  background-color: var(--velvet);
+  color: var(--ivory);
+}
+
+[data-theme="forest"] {
+  background-color: var(--forest);
+  color: var(--ivory);
+}
+
+[data-theme="ivory"] {
+  background-color: var(--ivory);
+  color: var(--ink);
+}
