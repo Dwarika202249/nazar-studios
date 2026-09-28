@@ -20,8 +20,8 @@ export function useGsapContext(
     // Check if motion is globally disabled via env
     if (process.env.NEXT_PUBLIC_DISABLE_MOTION === '1') return;
 
-    const ctx = gsap.context(() => {
-      contextFn(ctx);
+    const ctx = gsap.context((self) => {
+      contextFn(self);
     }, scope);
 
     return () => {

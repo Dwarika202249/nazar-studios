@@ -1,0 +1,89 @@
+{
+  "version": "1.0",
+  "disclaimer": "All demo imagery is AI-generated for flagship demo portfolio purposes.",
+  "items": [
+    {
+      "src": "/images/hero/hero-stills-01.webp",
+      "alt": "Bride in crimson and gold lehenga walking along white marble palace arcade overlooking lake at golden hour",
+      "aspectRatio": "16:9",
+      "dominant": "#C9A46A",
+      "group": "hero"
+    },
+    {
+      "src": "/images/stories/anaya-rohan/cover.webp",
+      "alt": "Anaya & Rohan standing on a lakeside marble courtyard at dusk in Udaipur",
+      "aspectRatio": "3:4",
+      "dominant": "#2A0C14",
+      "group": "stories",
+      "story": "anaya-rohan"
+    },
+    {
+      "src": "/images/stories/simran-jaspreet/cover.webp",
+      "alt": "Simran & Jaspreet laughing under fairy lights at midnight Delhi Sangeet",
+      "aspectRatio": "3:4",
+      "dominant": "#16211B",
+      "group": "stories",
+      "story": "simran-jaspreet"
+    },
+    {
+      "src": "/images/stories/lakshmi-arvind/cover.webp",
+      "alt": "Lakshmi in kasavu saree and Arvind in mundu by Kerala backwaters mandap in soft rain",
+      "aspectRatio": "3:4",
+      "dominant": "#16211B",
+      "group": "stories",
+      "story": "lakshmi-arvind"
+    },
+    {
+      "src": "/images/stories/zoya-imran/cover.webp",
+      "alt": "Zoya & Imran in candlelit Lucknow haveli courtyard at midnight",
+      "aspectRatio": "3:4",
+      "dominant": "#2A0C14",
+      "group": "stories",
+      "story": "zoya-imran"
+    },
+    {
+      "src": "/images/stories/riya-daniel/cover.webp",
+      "alt": "Riya & Daniel walking barefoot on secluded Goa beach at sunset",
+      "aspectRatio": "3:4",
+      "dominant": "#E8CB93",
+      "group": "stories",
+      "story": "riya-daniel"
+    },
+    {
+      "src": "/images/stories/tara-vihaan/cover.webp",
+      "alt": "Tara & Vihaan in mountain pine fog with bonfire embers in Himalayas",
+      "aspectRatio": "3:4",
+      "dominant": "#2D3A30",
+      "group": "stories",
+      "story": "tara-vihaan"
+    },
+    {
+      "src": "/images/moments/haldi.webp",
+      "alt": "Turmeric water splashing in sunny courtyard during Haldi ritual",
+      "aspectRatio": "3:4",
+      "dominant": "#C9A46A",
+      "group": "moments"
+    },
+    {
+      "src": "/images/moments/pheras.webp",
+      "alt": "Hands tied with sacred thread circling holy Agni fire during Pheras",
+      "aspectRatio": "3:4",
+      "dominant": "#B3261E",
+      "group": "moments"
+    },
+    {
+      "src": "/images/about/aarav-mehra.webp",
+      "alt": "Editorial black-and-white portrait of cinematographer Aarav Mehra with cinema camera",
+      "aspectRatio": "3:4",
+      "dominant": "#121212",
+      "group": "about"
+    },
+    {
+      "src": "/images/about/ishita-rao.webp",
+      "alt": "Editorial black-and-white portrait of lead photographer Ishita Rao with medium-format camera",
+      "aspectRatio": "3:4",
+      "dominant": "#121212",
+      "group": "about"
+    }
+  ]
+}
