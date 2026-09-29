@@ -1,11 +1,9 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
-import Link from 'next/link';
 import { gsap } from '@/lib/gsap';
-import { brand } from '@/content/brand';
 import { MenuOverlay } from '@/components/layout/MenuOverlay';
-import { SoundToggle } from '@/components/layout/SoundToggle';
+import { Logo } from '@/components/ui/Logo';
 
 export function Nav() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -49,29 +47,19 @@ export function Nav() {
     <>
       <header
         ref={navRef}
-        className="fixed top-0 left-0 w-full z-40 px-6 sm:px-10 py-6 flex items-center justify-between pointer-events-none transition-transform"
+        className="fixed top-0 left-0 w-full z-40 px-6 sm:px-10 py-5 sm:py-6 flex items-center justify-between pointer-events-none transition-transform"
       >
-        {/* Logo / Brand Lockup (Left) */}
-        <Link
-          href="/"
-          className="pointer-events-auto group flex items-baseline space-x-2 text-ivory mix-blend-difference"
-        >
-          <span className="font-cormorant text-2xl sm:text-3xl font-light tracking-tight-display">
-            {brand.name}
-          </span>
-          <span className="font-devanagari text-xs sm:text-sm text-champagne">
-            {brand.hindi}
-          </span>
-        </Link>
+        {/* Bespoke Logo Lockup (Left) */}
+        <div className="pointer-events-auto mix-blend-difference">
+          <Logo variant="full" />
+        </div>
 
-        {/* Actions (Right): Sound + Menu trigger */}
-        <div className="pointer-events-auto flex items-center space-x-4 sm:space-x-8">
-          <SoundToggle />
-
+        {/* Action: Menu trigger (Right) */}
+        <div className="pointer-events-auto flex items-center">
           <button
             onClick={() => setIsMenuOpen(true)}
             aria-label="Open Navigation Menu"
-            className="group flex items-center space-x-3 px-4 py-2 rounded-full border border-champagne/40 bg-ink/30 backdrop-blur-md text-ivory hover:border-champagne hover:bg-ink/60 transition-all duration-300"
+            className="group flex items-center space-x-3 px-4 sm:px-5 py-2 sm:py-2.5 rounded-full border border-champagne/40 bg-ink/40 backdrop-blur-md text-ivory hover:border-champagne hover:bg-ink/70 transition-all duration-300 shadow-[0_4px_20px_rgba(0,0,0,0.3)]"
           >
             <span className="font-mono text-[11px] uppercase tracking-wide-mono text-sand group-hover:text-champagne transition-colors">
               Menu

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nazarGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E5C9"/>
+      <stop offset="40%" stop-color="#E8CB93"/>
+      <stop offset="75%" stop-color="#C9A46A"/>
+      <stop offset="100%" stop-color="#9E783D"/>
+    </linearGradient>
+    <radialGradient id="nazarGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#C9A46A" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#C9A46A" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Background for dark mode tabs & contrast -->
+  <rect width="120" height="120" rx="28" fill="#0B0908"/>
+
+  <!-- Subtle ambient golden glow -->
+  <circle cx="60" cy="60" r="48" fill="url(#nazarGlow)"/>
+
+  <!-- Outer Celestial Ring -->
+  <circle cx="60" cy="60" r="50" fill="none" stroke="url(#nazarGold)" stroke-width="1.2" stroke-opacity="0.35"/>
+  <circle cx="60" cy="60" r="46" fill="none" stroke="url(#nazarGold)" stroke-width="0.8" stroke-dasharray="2 4" stroke-opacity="0.5"/>
+
+  <!-- 4 Cardinal Diamonds -->
+  <path d="M 60 12 L 62 14 L 60 16 L 58 14 Z" fill="url(#nazarGold)"/>
+  <path d="M 60 104 L 62 106 L 60 108 L 58 106 Z" fill="url(#nazarGold)"/>
+  <path d="M 12 60 L 14 62 L 16 60 L 14 58 Z" fill="url(#nazarGold)"/>
+  <path d="M 104 60 L 106 62 L 108 60 L 106 58 Z" fill="url(#nazarGold)"/>
+
+  <!-- Royal Chhatri Crown Finial (Top Arch) -->
+  <circle cx="60" cy="22" r="2.2" fill="url(#nazarGold)"/>
+  <path d="M 60 26 L 64 33 L 56 33 Z" fill="none" stroke="url(#nazarGold)" stroke-width="1"/>
+
+  <!-- The Nazar Eye Contour (The Gaze) -->
+  <path d="M 22 60 C 34 38, 86 38, 98 60 C 86 82, 34 82, 22 60 Z" 
+        fill="none" 
+        stroke="url(#nazarGold)" 
+        stroke-width="1.8" 
+        stroke-linecap="round"/>
+
+  <!-- Inner delicate eyelid filigree line -->
+  <path d="M 30 60 C 40 44, 80 44, 90 60 C 80 76, 40 76, 30 60 Z" 
+        fill="none" 
+        stroke="url(#nazarGold)" 
+        stroke-width="0.8" 
+        stroke-opacity="0.6"/>
+
+  <!-- Camera Aperture Iris Circle -->
+  <circle cx="60" cy="60" r="17" fill="#0B0908" stroke="url(#nazarGold)" stroke-width="1.4"/>
+
+  <!-- 6 Aperture Blades -->
+  <g stroke="url(#nazarGold)" stroke-width="1.1" stroke-linecap="round" stroke-opacity="0.85">
+    <line x1="60" y1="43" x2="74" y2="52"/>
+    <line x1="74" y1="52" x2="74" y2="68"/>
+    <line x1="74" y1="68" x2="60" y2="77"/>
+    <line x1="60" y1="77" x2="46" y2="68"/>
+    <line x1="46" y1="68" x2="46" y2="52"/>
+    <line x1="46" y1="52" x2="60" y2="43"/>
+  </g>
+
+  <!-- Golden Core Pupil -->
+  <circle cx="60" cy="60" r="5.5" fill="url(#nazarGold)"/>
+
+  <!-- Brilliant Center Starburst Glint -->
+  <path d="M 60 52 L 61.2 58.8 L 68 60 L 61.2 61.2 L 60 68 L 58.8 61.2 L 52 60 L 58.8 58.8 Z" fill="#FFFDF8"/>
+</svg>

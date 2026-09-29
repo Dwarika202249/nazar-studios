@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 80" width="100%" height="100%">
+  <defs>
+    <linearGradient id="logoGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E5C9" />
+      <stop offset="40%" stop-color="#E8CB93" />
+      <stop offset="75%" stop-color="#C9A46A" />
+      <stop offset="100%" stop-color="#9E783D" />
+    </linearGradient>
+  </defs>
+
+  <!-- Emblem Left (Center at x=40, y=40) -->
+  <g transform="translate(4, 4) scale(0.6)">
+    <!-- Outer hairline circle -->
+    <circle cx="60" cy="60" r="52" fill="none" stroke="url(#logoGold)" stroke-width="1.2" stroke-opacity="0.4" />
+    <circle cx="60" cy="60" r="47" fill="none" stroke="url(#logoGold)" stroke-width="0.8" stroke-dasharray="2 3" stroke-opacity="0.5" />
+
+    <!-- 4 Cardinal Diamond Accents -->
+    <path d="M 60 10 L 62 12 L 60 14 L 58 12 Z" fill="url(#logoGold)" />
+    <path d="M 60 106 L 62 108 L 60 110 L 58 108 Z" fill="url(#logoGold)" />
+    <path d="M 10 60 L 12 62 L 14 60 L 12 58 Z" fill="url(#logoGold)" />
+    <path d="M 106 60 L 108 62 L 110 60 L 108 58 Z" fill="url(#logoGold)" />
+
+    <!-- Royal Chhatri Arch Finial Motif -->
+    <circle cx="60" cy="20" r="2.2" fill="url(#logoGold)" />
+    <path d="M 60 24 L 64 31 L 56 31 Z" stroke="url(#logoGold)" stroke-width="1" fill="none" />
+
+    <!-- The Nazar Eye Contour -->
+    <path d="M 22 60 C 34 38, 86 38, 98 60 C 86 82, 34 82, 22 60 Z" stroke="url(#logoGold)" stroke-width="1.8" stroke-linecap="round" fill="none" />
+    <path d="M 30 60 C 40 44, 80 44, 90 60 C 80 76, 40 76, 30 60 Z" stroke="url(#logoGold)" stroke-width="0.8" stroke-opacity="0.6" fill="none" />
+
+    <!-- Aperture Iris Ring -->
+    <circle cx="60" cy="60" r="17" fill="#0B0908" stroke="url(#logoGold)" stroke-width="1.4" />
+
+    <!-- 6 Aperture Blades -->
+    <g stroke="url(#logoGold)" stroke-width="1.2" stroke-linecap="round" stroke-opacity="0.9">
+      <line x1="60" y1="43" x2="74" y2="52" />
+      <line x1="74" y1="52" x2="74" y2="68" />
+      <line x1="74" y1="68" x2="60" y2="77" />
+      <line x1="60" y1="77" x2="46" y2="68" />
+      <line x1="46" y1="68" x2="46" y2="52" />
+      <line x1="46" y1="52" x2="60" y2="43" />
+    </g>
+
+    <!-- Golden Core Pupil -->
+    <circle cx="60" cy="60" r="5" fill="url(#logoGold)" />
+
+    <!-- Starburst Glint -->
+    <path d="M 60 52 L 61.2 58.8 L 68 60 L 61.2 61.2 L 60 68 L 58.8 61.2 L 52 60 L 58.8 58.8 Z" fill="#FFFDF8" />
+  </g>
+
+  <!-- Typography Right -->
+  <text x="86" y="44" font-family="'Cormorant Garamond', Georgia, serif" font-size="32" font-weight="300" letter-spacing="4" fill="#F3ECE0">NAZAR</text>
+  <text x="238" y="42" font-family="'Tiro Devanagari Hindi', serif" font-size="16" fill="#C9A46A">नज़र</text>
+  <text x="88" y="60" font-family="'DM Mono', monospace" font-size="8" letter-spacing="3" fill="#D9CDB8" opacity="0.7">STUDIOS · JAIPUR</text>
+</svg>
